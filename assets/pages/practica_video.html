@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<header>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<meta http-equiv="refresh" content="10">
+	<title>Practica Canva</title>
+	<link rel="stylesheet" href="../css/style_pages.css">
+	
+</header>
+
+<body>
+  <h1>Práctica de Video en HTML</h1>
+
+  <section>
+    <h2>&lt;video&gt;</h2>
+    <p>La etiqueta <code>&lt;video&gt;</code> se usa para reproducir videos directamente en la página web.</p>
+
+    <code>
+      &lt;video width="400" controls&gt;<br>
+      &nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+      &lt;/video&gt;
+    </code>
+
+    <p>Se muestra así:</p>
+    <video width="400" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+  </section>
+
+  <section>
+    <h2>Atributos útiles</h2>
+    <ul>
+      <li><code>controls</code> → Muestra los controles del video.</li>
+      <li><code>autoplay</code> → Reproduce automáticamente (no siempre permitido).</li>
+      <li><code>loop</code> → Repite el video.</li>
+      <li><code>poster</code> → Imagen que se muestra antes de reproducir.</li>
+    </ul>
+  </section>
+</body>
+</html>

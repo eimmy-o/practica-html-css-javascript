@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<header>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<meta http-equiv="refresh" content="10">
+	<title>Practica Canva</title>
+	<link rel="stylesheet" href="../css/style_pages.css">
+	
+</header>
+
+<body>
+  <h1>Práctica de Formularios en HTML</h1>
+
+  <section>
+    <h2>&lt;form&gt;</h2>
+    <p>La etiqueta <code>&lt;form&gt;</code> se usa para crear formularios que capturan datos del usuario.</p>
+    <code>
+      &lt;form action="#" method="post"&gt;<br>
+      &nbsp;&lt;label&gt;Nombre:&lt;/label&gt;<br>
+      &nbsp;&lt;input type="text" name="nombre"&gt;<br>
+      &nbsp;&lt;label&gt;Correo:&lt;/label&gt;<br>
+      &nbsp;&lt;input type="email" name="correo"&gt;<br>
+      &nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
+      &lt;/form&gt;
+    </code>
+
+    <p>Se muestra así:</p>
+    <form action="#" method="post">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" placeholder="Escribe tu nombre">
+      <label>Correo:</label>
+      <input type="email" name="correo" placeholder="correo@ejemplo.com">
+      <label>Mensaje:</label>
+      <textarea rows="4" placeholder="Escribe tu mensaje"></textarea>
+      <label>País:</label>
+      <select>
+        <option>Ecuador</option>
+        <option>Colombia</option>
+        <option>Perú</option>
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</body>
+</html>
