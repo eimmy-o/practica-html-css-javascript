@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-	<!-- Página principal de las prácticas -->
 	<!-- ~~~~~~~~~~~~~~~~ metadatos ~~~~~~~~~~~~~~~~ -->
 
 	<meta charset="UTF-8"> <!-- sirve para conocer la codificacion del texto ortografica/gramatica etc.-->
@@ -16,7 +15,7 @@
 
 	<!-- ~~~~~~~~~~~~~~~~ Título e Iconos ~~~~~~~~~~~~~~~~ -->
 
-	<title>Práctica Audio</title>
+	<title>Práctica Tablas</title>
 	<link rel="stylesheet" href="../css/style_pages.css"> <!-- siempre se debe revisar que la ruta este correcta -->
 	<link rel="icon" type="image/jpg" href="../img/BugsBonny/Cyote.ico"> <!-- icono en la pesataña -->
 	
@@ -57,7 +56,7 @@
 		<a href="../pages/practica_css.html">
 			Práctica de CSS
 		</a> ~
-		<a href="../pages/practica_copypaste.html">
+		<a href="assets/copy_paste/johndoe/public_html/index.html">
 			Práctica de Copy Paste (Plantilla)
 		</a> ~
 		<a href="../pages/practica_javascript.html">
@@ -83,45 +82,76 @@
 		</a>
 	</nav>
 	<hr>
-	<!-- ~~~~~~~~~~~~~~~~ Práctica de etiquetas de audio ~~~~~~~~~~~~~~~~ -->
+	<!-- ~~~~~~~~~~~~~~~~ Práctica de etiquetas de tablas ~~~~~~~~~~~~~~~~ -->
 	<main>
-      <h1>Práctica de Tablas en HTML</h1>
-
-      <section>
-        <h2>&lt;table&gt;</h2>
-        <p>La etiqueta <code>&lt;table&gt;</code> se usa para mostrar datos organizados en filas y columnas.</p>
-
-        <code>
-          &lt;table&gt;<br>
-          &nbsp;&lt;tr&gt;&lt;th&gt;Nombre&lt;/th&gt;&lt;th&gt;Edad&lt;/th&gt;&lt;/tr&gt;<br>
-          &nbsp;&lt;tr&gt;&lt;td&gt;Ana&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;<br>
-          &lt;/table&gt;
-        </code>
-
-        <p>Se muestra así:</p>
-        <table>
-          <tr>
-            <th>Nombre</th>
-            <th>Edad</th>
-            <th>Ciudad</th>
-          </tr>
-          <tr>
-            <td>María</td>
-            <td>21</td>
-            <td>Guayaquil</td>
-          </tr>
-          <tr>
-            <td>José</td>
-            <td>19</td>
-            <td>Quito</td>
-          </tr>
-          <tr>
-            <td>Andrea</td>
-            <td>22</td>
-            <td>Cuenca</td>
-          </tr>
-        </table>
-      </section>
+        <h1>Práctica de Tablas en HTML</h1>
+		<h3>Horario de clases</h3>
+		<table border="1" cellpadding="8" cellspacing="0" aling="center" width="25%">
+			<thead>
+				<tr bgcolor="#3333333" style="color:white" text-align:center>
+					<th>Hora</th>
+					<th>Lunes</th>
+					<th>Martes</th>
+					<th>Miercoles</th>
+					<th>Jueves</th>
+					<th>Viernes</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr> <!-- Fila #1 -->
+					<td bgcolor="#3333333" style="color:white" text-align:center>7:00 - 9:00</td> <!-- Hora -->
+					<td bgcolor="#A880A0" style="color:black" text-align:center colspan="2">Desarrollado Web</td> <!-- Lunes -->
+					<td bgcolor="#E19485" style="color:black" text-align:center>IA - Practica </td> <!-- Miercoles -->
+					<td bgcolor="#C1726F" style="color:black" text-align:center>Circuito</td> <!-- Jueves -->
+					<td bgcolor="#23131E" style="color:white" text-align:center rowspan="2">Matemáticas</td>
+				</tr>
+				<tr> <!-- Fila #2 -->
+					<td bgcolor="#3333333" style="color:white" text-align:center>9:00 - 11:00</td> <!-- Hora -->
+					<td bgcolor="#23131E" style="color:white" text-align:center>Matematica</td> <!-- Lunes -->
+					<td bgcolor="#E19485" style="color:black" text-align:center>IA - Practica</td> <!-- Martes -->
+					<td bgcolor="#C1726F" style="color:black" text-align:center>Circuito</td> <!-- Miércoles -->
+					<td bgcolor="#2A5F8D" style="color:black" text-align:center>Integrales II</td> <!-- Jueves -->
+				</tr>
+				<tr> <!-- Fila #3 -->
+					<td bgcolor="#3333333" style="color:white" text-align:center>11:00 - 13:00</td> <!-- Hora -->
+					<td bgcolor="#E19485" style="color:black" text-align:center>IA - Practica</td> <!-- Lunes -->
+					<td bgcolor="#C1726F" style="color:black" text-align:center>circuito</td> <!-- Martes -->
+					<td bgcolor="#2A5F8D" style="color:black" text-align:center>Integrales II</td> <!-- Miercoles -->
+					<td bgcolor="#B05857" style="color:black" text-align:center>Titulación</td> <!-- Jueves -->
+					<td bgcolor="#E19485" style="color:black" text-align:center>IA - Practica</td> <!-- Viernes -->
+				</tr>
+				<tr> <!-- Fila #4 -->
+					<td bgcolor="#3333333" style="color:white" text-align:center>13:00 - 14:00</td> <!-- Hora -->
+					<td colspan="5">Almuerzo</td>
+				</tr>
+				<tr> <!-- Fila #5 -->
+					<td bgcolor="#3333333" style="color:white" text-align:center>14:00 - 15:00</td> <!-- Hora -->
+					<td bgcolor="#C1726F" style="color:black" text-align:center>Circuito</td> <!-- Lunes -->
+					<td bgcolor="#2A5F8D" style="color:black" text-align:center>Integrales II</td> <!-- Martes -->
+					<td bgcolor="#B05857" style="color:black" text-align:center>Titulacion</td> <!-- Miercoles -->
+					<td bgcolor="#C1726F" style="color:black" text-align:center>Circuito</td> <!-- Jueves -->
+					<td bgcolor="#E19485" style="color:black" text-align:center>IA - Practica</td> <!-- Viernes -->
+				</tr>
+				<tr> <!-- Fila #5 -->
+					<td bgcolor="#3333333" style="color:white" text-align:center>15:00 - 16:00</td> <!-- Hora -->
+					<td bgcolor="#2A5F8D" style="color:black" text-align:center>Integrales II</td> <!-- Lunes -->
+					<td bgcolor="#B05857" style="color:black" text-align:center>Titulacion</td> <!-- Martes -->
+					<td bgcolor="#E19485" style="color:black" text-align:center>IA - Practica</td> <!-- Miércoles -->
+					<td bgcolor="#23131E" style="color:white" text-align:center>Matematica</td> <!-- Jueves -->
+					<td bgcolor="#2A5F8D" style="color:black" text-align:center>Integrales II</td> <!-- Viernes -->
+				</tr>
+				<tr> <!-- Fila #5 -->
+					<td bgcolor="#3333333" style="color:white" text-align:center>16:00 - 17:00</td> <!-- Hora -->
+					<td bgcolor="#B05857" style="color:black" text-align:center>Titulacion</td> <!-- Lunes -->
+					<td bgcolor="#E19485" style="color:black" text-align:center colspan="2">IA - Practica</td>
+					<td bgcolor="#A880A0" style="color:black" text-align:center colspan="2">Desarrollado Web</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+				</tr>
+			</tfoot>
+		</table>
     </main>
     <hr>
 	<!-- ~~~~~~~~~~~~~~~~ Pie de página ~~~~~~~~~~~~~~~~ -->

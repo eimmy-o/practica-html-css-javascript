@@ -17,7 +17,7 @@
 
 	<title>Práctica Audio</title>
 	<link rel="stylesheet" href="../css/style_pages.css"> <!-- siempre se debe revisar que la ruta este correcta -->
-	<link rel="icon" type="image/jpg" href="../img/BugsBonny/Cyote.ico"> <!-- icono en la pesataña -->
+	<link rel="icon" type="image/jpg" href="../img/BugsBonny/BUGS.ICO"> <!-- icono en la pesataña -->
 
 </head>
 
@@ -56,7 +56,7 @@
 		<a href="../pages/practica_css.html">
 			Práctica de CSS
 		</a> ~
-		<a href="../pages/practica_copypaste.html">
+		<a href="assets/copy_paste/johndoe/public_html/index.html">
 			Práctica de Copy Paste (Plantilla)
 		</a> ~
 		<a href="../pages/practica_javascript.html">
@@ -84,9 +84,54 @@
 	<hr>
 	<!-- ~~~~~~~~~~~~~~~~ Práctica de etiquetas de audio ~~~~~~~~~~~~~~~~ -->
 	<main>
-        <audio src="" controls>
-            Su navegador no soporta esta etiqueta de audio
-        </audio>
+        <h1>Práctica de Audio en HTML</h1>
+        <hr>
+        <section>
+        	<h2>Etiqueta audio</h2>
+
+			<div>
+				<p>La etiqueta <code>&lt;audio&gt;</code> se usa para reproducir audios directamente en la página web.</p>
+				<p>Ejemplo:</p>
+			</div>
+
+			<div>
+				<code>
+					&lt;audio src="audio.mp3" controls&gt;<br>
+					&lt;/audio&gt;
+				</code>
+			</div>
+
+			<div>
+				<p>Se muestra así:</p>
+				<div>
+					<p>A continuacion mi cancion favorita de: <b>Seventeen</b> (una banda coreana)</p>
+					<h3>Shadow - Seventeen</h3>
+				</div>
+
+				<div>
+					<audio src="../audio/Shadow.mp3" controls>
+						Su navegador no soporta esta etiqueta de audio
+					</audio>
+				</div>
+
+				<div>
+					<p>
+						Escuchar más canciones de ellos aqui:
+						<a target="_blank" href="https://music.youtube.com/channel/UCfkXDY7vwkcJ8ddFGz8KusA">Link</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<hr>
+		<section>
+			<h2>Atributos útiles</h2>
+			<ul>
+			<li><code>controls</code> → Muestra los controles del video.</li>
+			<li><code>autoplay</code> → Reproduce automáticamente (no siempre permitido).</li>
+			<li><code>loop</code> → Repite el video.</li>
+			<li><code>poster</code> → Imagen que se muestra antes de reproducir.</li>
+			</ul>
+		</section>
     </main>
 	<hr>
 	<!-- ~~~~~~~~~~~~~~~~ Pie de página ~~~~~~~~~~~~~~~~ -->

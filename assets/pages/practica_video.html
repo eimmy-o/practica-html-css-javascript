@@ -16,9 +16,9 @@
 
 	<!-- ~~~~~~~~~~~~~~~~ Título e Iconos ~~~~~~~~~~~~~~~~ -->
 
-	<title>Práctica Audio</title>
+	<title>Práctica Video</title>
 	<link rel="stylesheet" href="../css/style_pages.css"> <!-- siempre se debe revisar que la ruta este correcta -->
-	<link rel="icon" type="image/jpg" href="../img/BugsBonny/Cyote.ico"> <!-- icono en la pesataña -->
+	<link rel="icon" type="image/jpg" href="../img/BugsBonny/BUGS0A.ICO"> <!-- icono en la pesataña -->
 
 </head>
 <body>
@@ -56,7 +56,7 @@
 		<a href="../pages/practica_css.html">
 			Práctica de CSS
 		</a> ~
-		<a href="../pages/practica_copypaste.html">
+		<a href="assets/copy_paste/johndoe/public_html/index.html">
 			Práctica de Copy Paste (Plantilla)
 		</a> ~
 		<a href="../pages/practica_javascript.html">
@@ -87,37 +87,85 @@
         <h1>Práctica de Video en HTML</h1>
         <hr>
         <section>
-          <h2>&lt;video&gt;</h2>
-          <p>La etiqueta <code>&lt;video&gt;</code> se usa para reproducir videos directamente en la página web.</p>
+			<h2>Etiqueta video</h2>
 
-          <code>
-            &lt;video controls&gt;<br>
-            &nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
-            &lt;/video&gt;
-          </code>
+			<div>
+				<p>La etiqueta <code>&lt;video&gt;</code> se usa para reproducir videos directamente en la página web.</p>
+				<p>es importante usar los atributos <code>width</code> y <code>height</code> para una mejor presentacion</p>
+				<p>Ejemplo:</p>
+			</div>
 
-          <p>Se muestra así:</p>
-          <video controls>
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            Tu navegador no soporta el elemento de video.
-          </video>
-        </section>
-        <hr>
-        <section>
-          <h2>Atributos útiles</h2>
-          <ul>
-            <li><code>controls</code> → Muestra los controles del video.</li>
-            <li><code>autoplay</code> → Reproduce automáticamente (no siempre permitido).</li>
-            <li><code>loop</code> → Repite el video.</li>
-            <li><code>poster</code> → Imagen que se muestra antes de reproducir.</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Videos con portada</h2>
-          <video>
+			<div>
+				<code>
+					&lt;video controls width="" height=""&gt;<br>
+						&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+					&lt;/video&gt;
+				</code>
+			</div>
 
-          </video>
-        </section>
+			<div>
+				<p>Se muestra así:</p>
+
+				<div>
+					<p>A continuacion un cachito de mi presentacion favorita de: <b>SHINee</b> (una banda coreana)</p>
+					<h3>Body Rhythm - SHINee</h3>
+				</div>
+
+				<div>
+					<video controls width="500" height="250">
+						<source src="../videos/SHINee_Body_Rhythm.mp4" type="video/mp4">
+						Tu navegador no soporta el elemento de video.
+					</video>
+				</div>
+
+				<div>
+					<p>
+						Ver el video completo aquí:
+						<a target="_blank" href="https://www.youtube.com/watch?v=wGuGSAKEEGU">Link</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<hr>
+		<section>
+			<h2>Atributos útiles</h2>
+				<ul>
+					<li><code>controls</code> → Muestra los controles del video.</li>
+					<li><code>autoplay</code> → Reproduce automáticamente (no siempre permitido - considerado mala práctica).</li>
+					<li><code>loop</code> → Repite el video.</li>
+				</ul>
+		</section>
+		<hr>
+		<section>
+			<h2>Videos con portada</h2>
+			<div>
+				<p>Podemos añadirle una portada a nuestros videos</p>
+				<p>Comunmente usado en publicidad, al mostrar una imagen y reproducir un video totalmente ajeno a la imagen vista</p>
+				<p>Para esto usamos: <code>poster</code> así:</p>
+			</div>
+
+			<div>
+				<code>
+					&lt;video <br>
+						&nbsp;controls <br>
+						&nbsp;width="" <br>
+						&nbsp;height="" <br>
+						&nbsp;poster="imagen.jpg"<br>
+					&gt;<br>
+						&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+					&lt;/video&gt;
+				</code>
+			</div>
+
+			<div>
+				<p>Se veria así:</p>
+				<video controls width="500" height="250" poster="../img/bakugou.jpg">
+					<source src="../videos/SHINee_Body_Rhythm.mp4" type="video/mp4">
+					Tu navegador no soporta el elemento de video.
+				</video>
+			</div>
+
+		</section>
     </main>
     <hr>
 	<!-- ~~~~~~~~~~~~~~~~ Pie de página ~~~~~~~~~~~~~~~~ -->
