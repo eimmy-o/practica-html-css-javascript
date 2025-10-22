@@ -153,8 +153,9 @@
 
 			<div>
 				<p>
-					La etiqueta <code>&lt;ol&gt;</code>
-					se usa para crear listas numeradas
+				  Las listas anidadas son listas que contienen otras listas dentro de sus elementos. 
+				  Pueden ser tanto <code>&lt;ul&gt;</code> (no ordenadas) como <code>&lt;ol&gt;</code> (ordenadas). 
+				  Son útiles para mostrar jerarquías o subcategorías.
 				</p>
 				<p>Ejemplo:</p>
 			</div>
@@ -162,59 +163,135 @@
 			<div>
 				<code>
 					&lt;ol&gt;<br>
-					&nbsp;&lt;li&gt;Elemento&lt;/li&gt; <br>
-					&nbsp;&lt;li&gt;Elemento&lt;/li&gt; <br>
-					&nbsp;&lt;li&gt;Elemento&lt;/li&gt; <br>
+					&nbsp;&nbsp;&lt;li&gt;Frutas&lt;/li&gt;<br>
+					&nbsp;&nbsp;&lt;ul&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Manzana&lt;/li&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Banana&lt;/li&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Naranja&lt;/li&gt;<br>
+					&nbsp;&nbsp;&lt;/ul&gt;<br>
+					&nbsp;&nbsp;&lt;li&gt;Verduras&lt;/li&gt;<br>
+					&nbsp;&nbsp;&lt;ul&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Zanahoria&lt;/li&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Lechuga&lt;/li&gt;<br>
+					&nbsp;&nbsp;&lt;/ul&gt;<br>
 					&lt;/ol&gt;
 				</code>
 			</div>
 
 			<div>
-				<p>Se muestra asi:</p>
+				<p>Se muestra así:</p>
 				<ol>
-					<li>Elemento</li>
-					<li>Elemento</li>
-					<li>Elemento</li>
+				  <li>Frutas
+					<ul>
+					  <li>Manzana</li>
+					  <li>Banana</li>
+					  <li>Naranja</li>
+					</ul>
+				  </li>
+				  <li>Verduras
+					<ul>
+					  <li>Zanahoria</li>
+					  <li>Lechuga</li>
+					</ul>
+				  </li>
 				</ol>
 			</div>
 		</section>
 		<hr>
 		<section>
-			<h2>Listas Definición</h2>
+			<h2>Lista de definiciones - dl</h2>
+			<p>Se usa para mostrar términos y sus descripciones.</p>
+			<code>
+				&lt;dl&gt;<br>
+				&nbsp;&lt;dt&gt;HTML&lt;/dt&gt;<br>
+				&nbsp;&lt;dd&gt;Lenguaje de marcado para crear páginas web.&lt;/dd&gt;<br>
+				&nbsp;&lt;dt&gt;CSS&lt;/dt&gt;<br>
+				&nbsp;&lt;dd&gt;Lenguaje para dar estilo al contenido HTML.&lt;/dd&gt;<br>
+				&lt;/dl&gt;
+			</code>
+			<p>Se muestra así:</p>
+			<dl>
+				<dt>HTML</dt>
+				<dd>Lenguaje de marcado para crear páginas web.</dd>
+				<dt>CSS</dt>
+				<dd>Lenguaje para dar estilo al contenido HTML.</dd>
+			</dl>
+    	</section>
+		<hr>
+		<section>
+			<h2>Atributos útiles</h2>
 
 			<div>
-				<p>
-					La etiqueta <code>&lt;ol&gt;</code>
-					se usa para crear listas numeradas
-				</p>
-				<p>Ejemplo:</p>
-			</div>
-
-			<div>
+				<h3>type - ol</h3>
+				<p><strong>Qué hace:</strong> Define el tipo de numeración para las listas ordenadas.</p>
+				<p><strong>Cómo se usa:</strong> Dentro de la etiqueta <code>&lt;ol&gt;</code> se agrega el atributo <code>type</code> con valores como <code>"1"</code>, <code>"A"</code>, <code>"a"</code>, <code>"I"</code> o <code>"i"</code>.</p>
+				<p><strong>Ejemplo:</strong></p>
 				<code>
-					&lt;ol&gt;<br>
-					&nbsp;&lt;li&gt;Elemento&lt;/li&gt; <br>
-					&nbsp;&lt;li&gt;Elemento&lt;/li&gt; <br>
-					&nbsp;&lt;li&gt;Elemento&lt;/li&gt; <br>
-					&lt;/ol&gt;
+				  &lt;ol type="A"&gt;<br>
+				  &nbsp;&nbsp;&lt;li&gt;Primero&lt;/li&gt;<br>
+				  &nbsp;&nbsp;&lt;li&gt;Segundo&lt;/li&gt;<br>
+				  &lt;/ol&gt;
 				</code>
+				<p>Se muestra así:</p>
+				<ol type="A">
+				  <li>Primero</li>
+				  <li>Segundo</li>
+				</ol>
 			</div>
 
 			<div>
-				<p>Se muestra asi:</p>
-				<ol>
-					<li>Elemento</li>
-					<li>Elemento</li>
-					<li>Elemento</li>
+				<h3>list-style-type - ul</h3>
+				<p><strong>Qué hace:</strong> Permite definir el tipo de viñeta o numeración mediante CSS.</p>
+				<p><strong>Cómo se usa:</strong> Dentro de una regla de estilo CSS o en línea.</p>
+				<p><strong>Ejemplo:</strong></p>
+				<code>
+				  &lt;ul style="list-style-type: square;"&gt;<br>
+				  &nbsp;&nbsp;&lt;li&gt;Rojo&lt;/li&gt;<br>
+				  &nbsp;&nbsp;&lt;li&gt;Azul&lt;/li&gt;<br>
+				  &lt;/ul&gt;
+				</code>
+				<p>Se muestra así:</p>
+				<ul style="list-style-type: square;">
+				  <li>Rojo</li>
+				  <li>Azul</li>
+				</ul>
+				</div>
+
+				<div>
+				<h3>start</h3>
+				<p><strong>Qué hace:</strong> Permite definir el número de inicio en una lista ordenada.</p>
+				<p><strong>Cómo se usa:</strong> Agregando el atributo <code>start</code> en la etiqueta <code>&lt;ol&gt;</code>.</p>
+				<p><strong>Ejemplo:</strong></p>
+				<code>
+				  &lt;ol start="5"&gt;<br>
+				  &nbsp;&nbsp;&lt;li&gt;Paso cinco&lt;/li&gt;<br>
+				  &nbsp;&nbsp;&lt;li&gt;Paso seis&lt;/li&gt;<br>
+				  &lt;/ol&gt;
+				</code>
+				<p>Se muestra así:</p>
+				<ol start="5">
+				  <li>Paso cinco</li>
+				  <li>Paso seis</li>
 				</ol>
 			</div>
-		</section>
-		<hr>
-		<section>
-			<h2>Atributos utiles</h2>
-			<p> en production </p>
-			<p>type (numeros)</p>
-			<p>list-style-type(imgs o viñetas)</p>
+
+			<div>
+				<h3>reversed</h3>
+				<p><strong>Qué hace:</strong> Invierte el orden de numeración en una lista ordenada.</p>
+				<p><strong>Cómo se usa:</strong> Añadiendo el atributo <code>reversed</code> sin valor dentro de <code>&lt;ol&gt;</code>.</p>
+				<p><strong>Ejemplo:</strong></p>
+				<code>
+				  &lt;ol reversed&gt;<br>
+				  &nbsp;&nbsp;&lt;li&gt;Uno&lt;/li&gt;<br>
+				  &nbsp;&nbsp;&lt;li&gt;Dos&lt;/li&gt;<br>
+				  &lt;/ol&gt;
+				</code>
+				<p>Se muestra así:</p>
+				<ol reversed>
+				  <li>Uno</li>
+				  <li>Dos</li>
+				</ol>
+			</div>
 		</section>
 	</main>
 	<hr>
