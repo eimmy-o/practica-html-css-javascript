@@ -100,35 +100,79 @@
 					Pero no se puede usar por si sola, necesita un atributo esencial:
 					<code>src</code> (ruta o enlace de la imagen que queremos insertar)
 				</p>
+
+				<p>es importante usar los atributos <code>width</code> y <code>height</code> para una mejor presentacion</p>
 				<p>Ejemplo:</p>
 			</div>
 
 			<div>
 				<code>
-					&lt;img src="imagen.jpg"&gt;
+					&lt;img src="imagen.jpg" width="" height=""&gt;
 				</code>
 			</div>
 
 			<div>
 				<p>Se muestra asi:</p>
-				<img src="../img/bakugou.jpg">
+				<img src="../img/bakugou.jpg" width="250" height="250">
 			</div>
 		</section>
 		<hr>
 		<section>
-			<h2>Atributos utiles</h2>
-			<p> en production </p>
+			<h2>Iframes</h2>
+			<div>
+				<h3>Página Externa</h3>
+				<p>Mi Curriculum Vitae</p>
+				<iframe
+					title="Página externa"
+					width="500"
+					height="500"
+					src="https://eimmy-o.github.io/curriculum_vitae/"
+					style="border: 1px solid">
+				</iframe>
+			</div>
+			<div>
+				<h3>Youtube</h3>
+				<p>Replay - SHINee</p>
+				<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/VTASffPQGhY?si=RNx1-uqXKtlwTzix"
+					title="YouTube video player"
+					frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen>
+				</iframe>
+			</div>
 		</section>
 		<hr>
 		<section>
 			<h2>Mapeo de Imágenes</h2>
-			<p> en production </p>
+			<img
+				src="../img/Cloud.png"
+				alt="Red de computadoras"
+				usemap="#NubeComputadora"
+			>
+			<map name="NubeComputadora">
+				<area
+					shape="poly"
+					alt="computadora de escritorio"
+					coords="414,54,478, 85, 513, 66, 546, 85, 539, 207, 478, 224, 348, 135, 397, 115, 411, 52"
+					href="../pages/Nube/pagina_computadoras.html"
+					target="_blank"
+				>
+			</map>
 		</section>
 		<hr>
 		<section>
 			<h2>Imágen Responsiba</h2>
 			<p>resolucion diferente para cada tamaño de pantallla</p>
-			<picture></picture>
+			<picture>
+				<source media=" (min-width: 750px) " srcset="../img/banner.jpg">
+				<source media=" (min-width: 550px) " srcset="../img/bakugou.jpg">
+				<source media=" (min-width: 400px) " srcset="../img/banner_2.jpg">
+				<source media=" (min-width: 300px) " srcset="../img/bakugou_2.jpg">
+				<img src="../img/banner.jpg">
+			</picture>
 		</section>
 	</main>
 	<hr>
