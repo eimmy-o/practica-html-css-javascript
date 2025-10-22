@@ -1,42 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<header>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<head>
+	<!-- ~~~~~~~~~~~~~~~~ metadatos ~~~~~~~~~~~~~~~~ -->
+
+	<meta charset="UTF-8"> <!-- sirve para conocer la codificacion del texto ortografica/gramatica etc.-->
+	<meta name="description" content="prácticas - html, css, javascript"> <!-- aprendermela -->
+	<meta name="keywords" content="HTML, CSS, JAVASCRIPT"> <!-- aprendermela -->
+	<meta name="author" content="Eimmy Ochoa Morán"> <!-- aprendermela -->
+	<meta name="viewport" content="width=device-width , initial-scale=1.0"> <!-- sirve para ajustar el ancho a la pantalla donde se muestra -->
 	<meta http-equiv="refresh" content="10">
-	<title>Practica Canva</title>
-	<link rel="stylesheet" href="../css/style_pages.css">
+
+	<!-- ~~~~~~~~~~~~~~~~ metadatos ~~~~~~~~~~~~~~~~ -->
+
+	<!-- ~~~~~~~~~~~~~~~~ Título e Iconos ~~~~~~~~~~~~~~~~ -->
+
+	<title>Práctica Texto</title>
+	<link rel="stylesheet" href="../css/style.css"> <!-- siempre se debe revisar que la ruta este correcta -->
+	<link rel="icon" type="image/jpg" href="../img/BugsBonny/Daffy Duck 1.ico"> <!-- icono en la pesataña -->
 	
-</header>
-
+</head>
 <body>
-  <h1>Práctica de CSS</h1>
+	  <nav>
+      <a href="../../index.html"> 
+        Inicio
+      </a> ~ 
+      <a href="../pages/practica_texto.html"> 
+        Práctica de Texto
+      </a> ~ 
+      <a href="https://sites.google.com/fiec.espol.edu.ec/ochoa-eimmy/inicio" target="_blank" rel="noopener noreferrer">
+        Práctica Builder (Google Site)
+      </a> ~ 
+      <a href="https://ochoa-eimmy.my.canva.site/" target="_blank" rel="noopener noreferrer">
+        Práctica Canva (Link a Canva)
+      </a> ~ 
+      <a href="https://eimmy-o.github.io/practica-ia/" target="_blank" rel="noopener noreferrer">
+        Práctica de Inteligencia Artificial
+      </a> ~ 
+      <a href="../pages/practica_listas.html">
+        Práctica de Listas
+      </a> ~ 
+      <a href="../pages/practica_imagenes.html">
+        Práctica de Imágenes
+      </a> ~ 
+      <a href="../pages/practica_audio.html">
+        Práctica de Audio
+      </a> ~ 
+      <a href="../pages/practica_video.html">
+        Práctica de Video
+      </a> ~ 
+      <a href="../pages/practica_tablas.html">
+        Práctica de Tablas
+      </a> ~ 
+      <a href="../pages/practica_css.html">
+        Práctica de CSS
+      </a> ~ 
+      <a href="../pages/practica_copypaste.html">
+        Práctica de Copy Paste (Plantilla)
+      </a> ~ 
+      <a href="../pages/practica_javascript.html">
+        Práctica de JavaScript
+      </a> ~ 
+      <a href="../pages/practica_controles.html">
+        Práctica de Controles
+      </a> ~ 
+      <a href="../pages/practica_formulario.html">
+        Práctica de Formulario
+      </a> ~ 
+      <a href="../pages/practica_formulario-2.html">
+        Práctica de Formulario-2
+      </a> ~ 
+      <a href="../pages/practica_menuhorizontal.html">
+        Práctica de Menú Horizontal
+      </a>
+      <a href="../pages/practica_menuvertical.html">
+        Práctica de Menú Vertical
+      </a> ~
+      <a href="../pages/practica_crazy.html">
+        Práctica de Crazy
+      </a>
+	  </nav>
+	  <hr>
+    <main>
+        <h1 class="titulo">Práctica de CSS</h1>
 
-  <section>
-    <h2>¿Qué es CSS?</h2>
-    <p><strong>CSS</strong> (Cascading Style Sheets) se usa para dar estilo y formato a las páginas HTML.</p>
-    <p>Ejemplo de código:</p>
-    <code>
-      .caja {<br>
-      &nbsp;background-color: blue;<br>
-      &nbsp;color: white;<br>
-      &nbsp;padding: 20px;<br>
-      &nbsp;border-radius: 10px;<br>
-      }
-    </code>
+        <section>
+            <p>
+                CSS nos ayuda o sirve para dar estilo y diseño a nuestra página web.<br>
+                Para aplicarlo tenemos tres opciones:
+            </p>
 
-    <p>Se muestra así:</p>
-    <div class="caja">Soy una caja con estilo CSS 💅</div>
-  </section>
+            <div class="comportamiento">
+                <p class="caja">1️En línea (código embebido dentro de las etiquetas HTML).</p>
+                <p class="caja">2️Interno (código dentro del &lt;style&gt; en la cabecera).</p>
+                <p class="caja">3️Externo (archivo .css enlazado con &lt;link&gt;).</p>
+            </div>
+        </section>
 
-  <section>
-    <h2>Tipos de CSS</h2>
-    <ul>
-      <li><strong>Inline:</strong> dentro del elemento HTML.</li>
-      <li><strong>Interno:</strong> dentro de una etiqueta <code>&lt;style&gt;</code>.</li>
-      <li><strong>Externo:</strong> desde un archivo .css enlazado.</li>
-    </ul>
-  </section>
+        <!-- Modelo de cajas -->
+        <section>
+            <h2>Modelo de Caja</h2>
+            <div class="comportamiento">
+                <p class="caja">
+                    Modelo caja #1:<br>
+                    Todo elemento HTML se presenta en pantalla como una caja que tiene
+                    contenido, padding, borde y margen.
+                </p>
+                <p class="caja">
+                    Modelo caja #2:<br>
+                    Las cajas se pueden modificar con propiedades CSS como
+                    <code>margin</code>, <code>padding</code>, <code>border</code> y <code>width</code>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Notas -->
+        <section class="Resalta">
+            <article>
+                <h4>Notas importantes:</h4>
+                <p>1️CSS se ejecuta de arriba hacia abajo, las reglas más recientes sobrescriben las anteriores.</p>
+                <p>2️Tener cuidado con el orden y la jerarquía de selectores.</p>
+                <p>3️Es recomendable aplicar un “reset” de márgenes y paddings antes de diseñar.</p>
+            </article>
+        </section>
+
+        <!-- Hipervínculos -->
+        <section>
+            <h2>Hipervínculos</h2>
+            <hr>
+            <h5>Abrir en nueva pestaña</h5>
+            <a href="practica_Audio.html" target="_blank">Abrir en una nueva pestaña</a>
+
+            <h5>Abrir en la misma pestaña</h5>
+            <a href="practica_Audio.html" target="_self">Abrir en la misma pestaña</a>
+
+            <h5>Abrir en nueva pestaña (modo seguro)</h5>
+            <a href="practica_Audio.html" target="_blank" rel="noopener noreferrer">
+                Abrir modo seguro
+            </a>
+        </section>
+
+        <!-- Botones -->
+        <section>
+            <hr>
+            <h2>Botones con estilo</h2>
+            <h6>Evento hover</h6>
+            <button>Presióname #1</button>
+            <button class="Btn">Presióname #2</button>
+        </section>   
+    </main>
+
+    <hr>
+    <!-- ~~~~~~~~~~~~~~~~ Pie de página ~~~~~~~~~~~~~~~~ -->
+    <footer>
+      <p>Desarrollado por: Eimmy Ochoa Morán</p>
+      <p>
+        <a href="mailto:eimcocho@espol.edu.ec">
+          Correo 
+        </a>
+        |
+        <a href="tel:+593982824575">
+          Celular
+        </a>
+      </p>
+      <p>© 2025 - Página de Prácticas académicas | ESPOL</p>
+    </footer>
 </body>
 </html>
