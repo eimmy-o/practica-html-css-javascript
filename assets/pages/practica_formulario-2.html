@@ -1,47 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<header>
-	<meta charset="UTF-8">
+<head>
+	<!-- Página principal de las prácticas -->
+	<!-- ~~~~~~~~~~~~~~~~ metadatos ~~~~~~~~~~~~~~~~ -->
+
+	<meta charset="UTF-8"> <!-- sirve para conocer la codificacion del texto ortografica/gramatica etc.-->
+	<meta name="description" content="prácticas - html, css, javascript"> <!-- aprendermela -->
+	<meta name="keywords" content="HTML, CSS, JAVASCRIPT"> <!-- aprendermela -->
+	<meta name="author" content="Eimmy Ochoa Morán"> <!-- aprendermela -->
 	<meta name="viewport" content="width=device-width , initial-scale=1.0">
-	<meta http-equiv="refresh" content="10">
-	<title>Practica Canva</title>
-	<link rel="stylesheet" href="../css/style_pages.css">
-	
-</header>
+	<!-- sirve para ajustar el ancho a la pantalla donde se muestra -->
+	<meta http-equiv="refresh" content="300">
+
+	<!-- ~~~~~~~~~~~~~~~~ metadatos ~~~~~~~~~~~~~~~~ -->
+
+	<!-- ~~~~~~~~~~~~~~~~ Título e Iconos ~~~~~~~~~~~~~~~~ -->
+
+	<title>Práctica Formulario</title>
+	<link rel="stylesheet" href="../css/style_pages.css"> <!-- siempre se debe revisar que la ruta este correcta -->
+	<link rel="icon" type="image/jpg" href="../img/BugsBonny/BUGS.ICO"> <!-- icono en la pesataña -->
+
+</head>
 
 <body>
-  <h1>Práctica de Formularios en HTML</h1>
+	<nav>
+		<a href="../../index.html">
+			Inicio
+		</a> ~
+		<a href="../pages/practica_texto.html">
+			Práctica de Texto
+		</a> ~
+		<a href="https://sites.google.com/fiec.espol.edu.ec/ochoa-eimmy/inicio" target="_blank"
+			rel="noopener noreferrer">
+			Práctica Builder (Google Site)
+		</a> ~
+		<a href="https://ochoa-eimmy.my.canva.site/" target="_blank" rel="noopener noreferrer">
+			Práctica Canva (Link a Canva)
+		</a> ~
+		<a href="https://eimmy-o.github.io/practica-ia/" target="_blank" rel="noopener noreferrer">
+			Práctica de Inteligencia Artificial
+		</a> ~
+		<a href="../pages/practica_listas.html">
+			Práctica de Listas
+		</a> ~
+		<a href="../pages/practica_imagenes.html">
+			Práctica de Imágenes
+		</a> ~
+		<a href="../pages/practica_audio.html">
+			Práctica de Audio
+		</a> ~
+		<a href="../pages/practica_video.html">
+			Práctica de Video
+		</a> ~
+		<a href="../pages/practica_tablas.html">
+			Práctica de Tablas
+		</a> ~
+		<a href="../pages/practica_css.html">
+			Práctica de CSS
+		</a> ~
+		<a href="assets/copy_paste/johndoe/public_html/index.html">
+			Práctica de Copy Paste (Plantilla)
+		</a> ~
+		<a href="../pages/practica_javascript.html">
+			Práctica de JavaScript
+		</a> ~
+		<a href="../pages/practica_controles.html">
+			Práctica de Controles
+		</a> ~
+		<a href="../pages/practica_formulario.html">
+			Práctica de Formulario
+		</a> ~
+		<a href="../pages/practica_formulario-2.html">
+			Práctica de Formulario-2
+		</a> ~
+		<a href="../pages/practica_menuhorizontal.html">
+			Práctica de Menú Horizontal
+		</a>
+		<a href="../pages/practica_menuvertical.html">
+			Práctica de Menú Vertical
+		</a> ~
+		<a href="../pages/practica_crazy.html">
+			Práctica de Crazy
+		</a>
+	</nav>
+	<hr>
+	<!-- ~~~~~~~~~~~~~~~~ Práctica de etiquetas de audio ~~~~~~~~~~~~~~~~ -->
+	<main>
+        <h2>Practica Formulario</h2>
+      <div  id ="form">
+        <form>
 
-  <section>
-    <h2>&lt;form&gt;</h2>
-    <p>La etiqueta <code>&lt;form&gt;</code> se usa para crear formularios que capturan datos del usuario.</p>
-    <code>
-      &lt;form action="#" method="post"&gt;<br>
-      &nbsp;&lt;label&gt;Nombre:&lt;/label&gt;<br>
-      &nbsp;&lt;input type="text" name="nombre"&gt;<br>
-      &nbsp;&lt;label&gt;Correo:&lt;/label&gt;<br>
-      &nbsp;&lt;input type="email" name="correo"&gt;<br>
-      &nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
-      &lt;/form&gt;
-    </code>
+          <legend><strong> DATOS DE USUARIOS</strong> </legend><br>
+          <!-- nombre input-->
+          <label for="TxtName">Nombres</label>
+          <input type="text" id="TxtName" name=" TxtName" placeholder="Ingrese su nombre " class="contenedor" ><br><br>
+          <!-- email-->
+          <label for="email">Email</label>
+          <input type="email"  id="email"name="email" placeholder="email@coreo" class="contenedor"><br><br>
+          <!-- el required hace que sea obligatorio -->
 
-    <p>Se muestra así:</p>
-    <form action="#" method="post">
-      <label>Nombre:</label>
-      <input type="text" name="nombre" placeholder="Escribe tu nombre">
-      <label>Correo:</label>
-      <input type="email" name="correo" placeholder="correo@ejemplo.com">
-      <label>Mensaje:</label>
-      <textarea rows="4" placeholder="Escribe tu mensaje"></textarea>
-      <label>País:</label>
-      <select>
-        <option>Ecuador</option>
-        <option>Colombia</option>
-        <option>Perú</option>
-      </select>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+          <!-- Pais -->
+           <label for="sltPais">País</label>
+          <select id="sltPais"  name="sltPais" required class="contenedor">
+          <option value="Ecuador">Ecuador</option>
+          <option value="Peru">Peru</option>
+          <option value="Colombia">Colombia</option>
+          </select><br><br>
+
+          <!--Comntarios -->
+          <label for="comentarios">comentarios</label>
+          <textarea id="comentarios" name="=comentarios" placeholder="escriba aquí sus comentarios " class="contenedor"></textarea><br>
+
+          <!-- genero -->
+
+           <label for="rdgenero">genero</label>
+           <label><input type="radio" name="genero" value="masculino"> masculino</label>
+           <label><input type="radio" name="genero" value="femenino"> femenino</label><br>
+
+
+          <!-- check-->
+          <input type="checkbox" id="checkbox" name="checkbox">
+          <label for="checkbox">Términos y condiciones</label><br>
+
+
+          <!-- enviar -->
+           <button type="submit" id="btnEnviar" name="btnEnviar">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <hr>
+    <!-- ~~~~~~~~~~~~~~~~ Pie de página ~~~~~~~~~~~~~~~~ -->
+	<footer>
+		<p>Desarrollado por: Eimmy Ochoa Morán</p>
+		<p>
+			<a href="mailto:eimcocho@espol.edu.ec">
+				Correo
+			</a>
+			|
+			<a href="tel:+593982824575">
+				Celular
+			</a>
+		</p>
+		<p>© 2025 - Página de Prácticas académicas | ESPOL</p>
+	</footer>
+    <!-- enlace con js externo -->
+    <script src="../js/script_formulario.js"></script>
+
 </body>
 </html>

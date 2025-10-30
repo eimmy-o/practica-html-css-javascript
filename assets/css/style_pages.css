@@ -5,3 +5,54 @@ code {
 		  padding: 2px;
 		  font-size: 105%;
 		}
+
+#form{
+    display: flex;
+    font-family: Arial, sans-serif;
+    width: 30%; border: 1px solid black;
+    border-radius: 15px; box-shadow: 0 0 10px black;
+    padding: 15px;
+}
+.contenedor{
+    padding: 20px;
+    border-radius: 10px ;
+    border: 1px solid red;
+    box-shadow: 0 0 10px rgba(255, 34, 34, 0.1);
+    width: 300px;
+}
+
+label {
+    display: block;
+   font-family: Arial, sans-serif;
+   padding: 5px;
+}
+
+input[type="radio"] {
+    align-items:left;
+}
+
+button {
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgb(250, 12, 12);
+  color: rgb(255, 255, 255);
+  border: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(211, 111, 111);
+}
+
+
+footer{
+background-color: #837c7c;
+color: white;
+text-align: center;
+padding: 0px;
+margin: 0px;
+position: relative;
+width: 100%
+}
