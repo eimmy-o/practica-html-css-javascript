@@ -87,48 +87,53 @@
 	<hr>
 	<!-- ~~~~~~~~~~~~~~~~ Práctica de etiquetas de audio ~~~~~~~~~~~~~~~~ -->
 	<main>
-        <h2>Practica Formulario</h2>
-      <div  id ="form">
-        <form>
+		<h2>Práctica Formulario 2</h2>
+        <fieldset>
+            <!-- El formulario debe retornar los valores de cada eleemento en submit, llamando a la funcion -->
+            <form id="fmrDatos" name="fmrDatos" onsubmit="return FncDatosUser()">
+                <legend>Datos del Usuario</legend>
+                <label for="txtApellido">Nombre</label>
+                <input type="text" id="txtNombre" name="txtNombre" placeholder="Ingrese su nombre" required>
+                <br>
+                <label for="txtApellido">Apellido:</label>
+                <input type="text" name="txtApellido" id="txtApellido" placeholder="Ingrese se Apellido" required>
+                <br>
+                <label for="email">Ingrese su correo:</label>
+                <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                <!-- SA -->
+                <br>
+                <label for="sltPais"></label>
+                <select name="sltPais" id="sltPais" required>
+                    <option value="-">-- Seleccione un pais --</option>
+                    <option value="ec">Ecuador</option>
+                    <option value="us">Estados Unidos</option>
+                    <option value="ca">Canadá</option>
+                    <option value="mx">Mexico</option>
+                </select>
+                <!-- textarea -->
+                <br> <br>
+                <label for="txtareaComentarios">Comentarios</label><br>
+                <textarea name="txtareaComentarios" id="txtareaComentarios" placeholder="Comentarios aqui"
+                    required></textarea>
+                <!-- Genero -->
+                <br>
+                <fieldset>
+                    <legend>Genero</legend>
+                    <label for="radioGeneroM">Masculino</label>
+                    <input type="radio" name="genero" id="radioGeneroM" value="M">
+                    <label for="radioGeneroF">Femenino</label>
+                    <input type="radio" name="genero" id="radioGeneroF" value="F">
+                </fieldset>
+                <!-- Checkbox -->
+                <br> <br>
+                <label for="checkTerms">Aceptar terminos y condiciones: </label>
 
-          <legend><strong> DATOS DE USUARIOS</strong> </legend><br>
-          <!-- nombre input-->
-          <label for="TxtName">Nombres</label>
-          <input type="text" id="TxtName" name=" TxtName" placeholder="Ingrese su nombre " class="contenedor" ><br><br>
-          <!-- email-->
-          <label for="email">Email</label>
-          <input type="email"  id="email"name="email" placeholder="email@coreo" class="contenedor"><br><br>
-          <!-- el required hace que sea obligatorio -->
-
-          <!-- Pais -->
-           <label for="sltPais">País</label>
-          <select id="sltPais"  name="sltPais" required class="contenedor">
-          <option value="Ecuador">Ecuador</option>
-          <option value="Peru">Peru</option>
-          <option value="Colombia">Colombia</option>
-          </select><br><br>
-
-          <!--Comntarios -->
-          <label for="comentarios">comentarios</label>
-          <textarea id="comentarios" name="=comentarios" placeholder="escriba aquí sus comentarios " class="contenedor"></textarea><br>
-
-          <!-- genero -->
-
-           <label for="rdgenero">genero</label>
-           <label><input type="radio" name="genero" value="masculino"> masculino</label>
-           <label><input type="radio" name="genero" value="femenino"> femenino</label><br>
-
-
-          <!-- check-->
-          <input type="checkbox" id="checkbox" name="checkbox">
-          <label for="checkbox">Términos y condiciones</label><br>
-
-
-          <!-- enviar -->
-           <button type="submit" id="btnEnviar" name="btnEnviar">Enviar</button>
-        </form>
-      </div>
-    </main>
+                <input type="checkbox" name="checkTerms" id="checkTerms">
+                <br><br>
+                <button type="submit" id="btnEnviar" name="btnEnviar">Enviar</button>
+            </form>
+        </fieldset>
+    </main>
     <hr>
     <!-- ~~~~~~~~~~~~~~~~ Pie de página ~~~~~~~~~~~~~~~~ -->
 	<footer>
